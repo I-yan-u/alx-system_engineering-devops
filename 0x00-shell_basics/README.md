@@ -1,1 +1,1 @@
-Script that changes working directory
+How to list files in long format
