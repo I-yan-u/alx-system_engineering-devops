@@ -1,1 +1,1 @@
-How to list files in long format
+How to show hidden files
