@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script formats an apache log file
 
-awk '{print "$1", "$9"}' apache-access.log
+awk '{print $1, $9}' apache-access.log
