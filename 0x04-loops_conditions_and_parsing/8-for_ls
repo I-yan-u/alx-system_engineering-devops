@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script lists out the current working
+#+ directory while imiting the number and '-'
+
+for dir in *
+do
+	echo "$dir" | cut -d '-' -f2
+done 
