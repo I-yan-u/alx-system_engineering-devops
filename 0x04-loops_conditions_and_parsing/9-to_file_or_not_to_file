@@ -4,7 +4,7 @@
 file="school"
 if [ -e "$file"  ]
 then
-	echo "$file file exist"
+	echo "$file file exists"
 	if [ -s "$file"  ]
 	then
 		echo "$file file is not empty"
