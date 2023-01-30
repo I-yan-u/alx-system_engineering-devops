@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# prints PID of all bash processes
+
+ps -auxf | grep bash
+
