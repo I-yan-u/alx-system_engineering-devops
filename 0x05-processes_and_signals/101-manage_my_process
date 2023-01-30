@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# A script That manages the process of
+#+ manage_my_process file
+
+if [ "$1" == "start" ]
+then
+	./manage_my_process & echo "$$" > /var/run/my_process.pid
+	echo 'manage_my_process started'
+elif [ "$1" == "stop" ]
+then
+        pkill -f -9 manage_my_process
+	rm /var/run/my_process.pid
+        echo 'manage_my_process stopped'
+elif [ "$1" == "restart" ]
+then
+        pkill -f -9 manage_my_process
+        rm /var/run/my_process.pid
+	./manage_my_process & echo "$$" > /var/run/my_process.pid
+        echo 'manage_my_process restarted'
+else
+	Usage: manage_my_process {start|stop|restart}
+fi
