@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# connects without passphrase
+ssh -i ~/.ssh/school ubuntu@54.144.138.215
