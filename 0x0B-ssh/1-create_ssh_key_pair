@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Create an RSA key and save in file (school), must be 4096 bytes
+ssh-keygen -b 4096 -f school -N betty
