@@ -24,7 +24,7 @@ sudo printf %s "server {
     index		index.html index.htm index.nginx-debian.html;
 
     location /redirect_me {
-    redirect 301 / https://www.youtube.com/watch?v=TfgBHC5gvTI;
+    rewrite ^/(.*)$ https://www.youtube.com/watch?v=TfgBHC5gvTI permanent;
     }
 }
 " > /etc/nginx/sites-available/default
