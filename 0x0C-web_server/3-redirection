@@ -12,6 +12,7 @@ apt-get -y update
 apt-get -y install nginx
 
 sudo chown -R $USER /var/www/html
+sudo chown -R $USER /etc/nginx/sites-available
 
 sudo touch /var/www/html/index.html
 sudo echo "Hello World!" > /var/www/html/index.html
