@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Scripts that fixes bug on holbertonschool/265-0 Apache webserver
-echo "ServerName localhost" >> /etc/apache2.conf
+echo "Listen 8080" >> /etc/port.conf
 service apache2 start
