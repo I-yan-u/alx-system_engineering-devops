@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
 #Scripts that fixes bug on holbertonschool/265-0 Apache webserver
-echo "Listen 8080" >> /etc/port.conf
+echo "Listen 8080" >> /etc/apache2/port.conf
+
 service apache2 start
+
+echo "
+<VirtualHost *:8080>
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/html
+</VirtualHost>" >> /etc/apache2/sites-enabled/000-default.conf
