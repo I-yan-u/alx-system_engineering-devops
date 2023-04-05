@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Bash File that fixes curl: (7) Failed to connect to 0 port 80
-
-old="listen 8080 default_server"
-new="listen 80 default_server"
+old="8080 default_server"
+new="80 default_server"
 sed -i "s/$old/$new/" /etc/nginx/sites-enabled/default
-sudo service nginx restart
+service nginx restart
