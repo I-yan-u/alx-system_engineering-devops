@@ -10,11 +10,12 @@ sudo chown -R $USER /etc/haproxy
 sudo chown -R $USER /etc/default/haproxy
 
 printf %s "
-frontend hbnb-lb_front
+frontend ws_front
         bind *:80
         mode http
-        default_backend hbnb-lb_back
-backend hbnb-lb_back
+        default_backend ws_back
+
+backend ws_back
         balance roundrobin
         server 158041-web-01 b.yandev.tech:80 check
         server 158041-web-02 18.206.207.55:80 check
