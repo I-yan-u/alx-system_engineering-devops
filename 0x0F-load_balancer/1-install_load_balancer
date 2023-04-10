@@ -23,4 +23,4 @@ backend ws_back
 
 echo "ENABLED=1" >> /etc/default/haproxy
 
-sudo service haproxy start
+sudo /etc/init.d/haproxy restart
