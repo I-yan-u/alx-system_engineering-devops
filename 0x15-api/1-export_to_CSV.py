@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Script to assess API data from select url"""
-import requests
 import csv
+import requests
 import sys
 
 if __name__ == "__main__":
@@ -9,7 +9,7 @@ if __name__ == "__main__":
     user_id = sys.argv[1]
     user = requests.get(url + 'users/{}'.format(user_id)).json()
     tasks = requests.get(url + "todos", params={'userId': user_id}).json()
-    username = user.get("name")
+    username = user.get("username")
 
     completed = [t.get("title") for t in tasks if t.get("completed") is True]
 
