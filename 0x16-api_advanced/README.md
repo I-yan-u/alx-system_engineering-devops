@@ -1,3 +1,0 @@
-# Advanced API
-
-Coming soon!
