@@ -1,5 +1,0 @@
-# API
-
-Application programming interface
-
-...
