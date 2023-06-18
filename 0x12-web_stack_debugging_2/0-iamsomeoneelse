@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Script that runs a command as another user.
-sudo -H -u "$1" bash -c "whoami"
