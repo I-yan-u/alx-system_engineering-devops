@@ -1,7 +1,7 @@
 # Web stack debugging 2
 
 ## Concept
-[Web stack debugging](https://intranet.alxswe.com/concepts/68)
+- [Web stack debugging](https://intranet.alxswe.com/concepts/68)
 
 ![Debugging](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/287/99littlebugsinthecode-holberton.jpg 'Debugging')
 
