@@ -1,11 +1,11 @@
-#Web stack debugging 2
+# Web stack debugging 2
 
-##Concept
+## Concept
 [Web stack debugging](https://intranet.alxswe.com/concepts/68)
 
 ![Debugging](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/287/99littlebugsinthecode-holberton.jpg 'Debugging')
 
-##Requirements
+## Requirements
 - All your files will be interpreted on Ubuntu 20.04 LTS
 - All your files should end with a new line
 - A README.md file at the root of the folder of the project is mandatory
