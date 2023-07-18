@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Script that runs a command as another user from root
+
+sudo -u $1 bash -c 'whoami'
