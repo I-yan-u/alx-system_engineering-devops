@@ -15,6 +15,6 @@ if __name__ == "__main__":
     completed = [t.get('title') for t in req2 if t.get('completed') is True]
     user_name = req.get('name')
 
-    print('Employee {} is done with tasks({}/{}):'.format(
+    print("Employee {} is done with tasks({}/{}):".format(
         user_name, len(completed), len(req2)))
-    [print('\t {}'.format(c)) for c in completed]
+    [print("\t {}".format(c)) for c in completed]
